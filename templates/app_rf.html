@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fish Species Prediction</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        form { margin: 20px auto; width: 50%; }
+        input, button { padding: 10px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Fish Market Prediction</h2>
+    <form action="/predict" method="post">
+        <input type="text" name="Weight" placeholder="Weight" required>
+        <input type="text" name="length1" placeholder="Length1 (cm)" required>
+        <input type="text" name="length2" placeholder="Length2 (cm)" required>
+        <input type="text" name="length3" placeholder="Length3 (cm)" required>
+        <input type="text" name="height" placeholder="Height (cm)" required>
+        <input type="text" name="width" placeholder="Width (cm)" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
